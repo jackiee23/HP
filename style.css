@@ -1,0 +1,37 @@
+body {
+    min-height: 1000px;
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+}
+
+section .box {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    min-width: 1000px;
+    transform: translate(-50%, -50%);
+}
+
+section .box img {
+    max-width: 100%;
+}
+
+.text {
+    font-family: sans-serif;
+    position: relative;
+    bottom: 10px;
+    left: 250px;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.text span {
+    color: rgb(16, 29, 214);
+    font-weight: 700;
+}

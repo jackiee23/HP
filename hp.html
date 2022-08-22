@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adil Abdul Haq</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h2 class="text">SCROLL TO SEE <span>MAGIC</span></h2>
+    <section>
+        <div class="box box1"><img src="hp.png" /></div>
+        <div class="box box2"><img src="1.png" /></div>
+        <div class="box box3"><img src="2.png" /></div>
+        <div class="box box4"><img src="3.png" /></div>
+        <div class="box box5"><img src="4.png" /></div>
+    </section>
+    <footer>
+        <center>
+            <h2>
+                <!-- Mockup :
+                <a href="http://www.freepik.com">Designed by zlatko_plamenov / Freepik</a>
+            </h2> -->
+        </center>
+    </footer>
+
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script type="text/javascript">
+        gsap
+            .timeline({
+                scrollTrigger: {
+                    trigger: 'section',
+                    start: 'center center',
+                    end: 'bottom top',
+                    scrub: true,
+                    pin: true,
+                },
+            })
+            .from('.box1', {
+                x: innerWidth * -1,
+            })
+            .from('.box2', {
+                opacity: 0,
+            })
+            .from('.box3', {
+                x: innerWidth * 1,
+            })
+            .from('.box4', {
+                x: innerWidth * 1,
+            })
+            .from('.box5', {
+                x: innerWidth * 1,
+            });
+
+    </script>
+</body>
+
+</html>
